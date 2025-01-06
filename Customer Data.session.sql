@@ -22,13 +22,13 @@
 
 -- Question 3: How does the number of transactions vary across income groups?
 
-SELECT i.descript, count(t.cust_id)
-FROM customers c
-JOIN income_group i
-ON i.code = c.code
-JOIN transaction t
-ON c.cust_id = t.cust_id
-GROUP BY i.code, i.descript
+-- SELECT i.descript, count(t.cust_id)
+-- FROM customers c
+-- JOIN income_group i
+-- ON i.code = c.code
+-- JOIN transaction t
+-- ON c.cust_id = t.cust_id
+-- GROUP BY i.code, i.descript
 
 --Question 4: Which product code (account type) has the most significant cash flow?
 
