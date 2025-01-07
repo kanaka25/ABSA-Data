@@ -20,17 +20,17 @@
 -- ON c.cust_id = t.cust_id
 -- GROUP BY c.sex_code
 
-SELECT
-CASE 
-    WHEN c.sex_code::INT = 0 THEN 'Female'
-    WHEN c.sex_code::INT  = 1 THEN 'Male'
-    ELSE 'Unknown'
-END AS gender,
-SUM(t.amt) as transaction_amount
-FROM customers c
-JOIN transaction t
-ON c.cust_id = t.cust_id
-GROUP BY c.sex_code
+-- SELECT
+-- CASE 
+--     WHEN c.sex_code::INT = 0 THEN 'Female'
+--     WHEN c.sex_code::INT  = 1 THEN 'Male'
+--     ELSE 'Unknown'
+-- END AS gender,
+-- ROUND(SUM(t.amt)) as transaction_amount
+-- FROM customers c
+-- JOIN transaction t
+-- ON c.cust_id = t.cust_id
+-- GROUP BY c.sex_code
 
 -- Question 3: How does the number of transactions vary across income groups?
 
