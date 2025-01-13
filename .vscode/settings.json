@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Customer Data",
+            "database": "customerincome",
+            "username": "postgres",
+            "password": "5550121"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ABSA Data",
+            "database": "customerdb",
+            "username": "postgres",
+            "password": ""
+        }
+    ]
+}
