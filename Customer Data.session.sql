@@ -82,9 +82,9 @@
 -- ON t.cust_id = c.cust_id
 -- GROUP BY t.channel
 
-SELECT t.channel, ROUND(SUM(t.amt)) as total_transaction_amount
-FROM transaction t
-JOIN customers c
-ON t.cust_id = c.cust_id
-GROUP BY t.channel
-ORDER BY total_transaction_amount DESC
+-- SELECT t.channel, ROUND(SUM(t.amt)) as total_transaction_amount
+-- FROM transaction t
+-- JOIN customers c
+-- ON t.cust_id = c.cust_id
+-- GROUP BY t.channel
+-- ORDER BY total_transaction_amount DESC
