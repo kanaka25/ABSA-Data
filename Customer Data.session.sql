@@ -6,9 +6,9 @@
 -- GROUP BY c.code, i.descript
 -- ORDER BY c.code, i.descript
 
--- Question 2: How does the number of transactions vary across income groups?
+-- Question 2: How does the number of customers and transactions vary across income groups?
 
--- SELECT i.descript, count(t.cust_id)
+-- SELECT i.descript, count (c.cust_id), count(t.cust_id)
 -- FROM customers c
 -- JOIN income_group i
 -- ON i.code = c.code
